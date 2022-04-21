@@ -53,7 +53,7 @@ namespace CLessons_1
         * --------------------------------------------
         */
             //your code here
-            var result = (number % 4 == 0) ? number + " divides to 4": number + " doesn't divide to 4";
+            var result = (number % 4 == 0) ? number + " divides to 4" : number + " doesn't divide to 4";
             Console.WriteLine(result);
         }
 
@@ -283,10 +283,6 @@ namespace CLessons_1
                     Console.WriteLine(character + " is not a letter");
                     break;
             }
-
-            Homework homework = new Homework();
-
-          
         }
 
         public void CheckLetterIfVowelContains(char character)
@@ -310,6 +306,9 @@ namespace CLessons_1
                 Console.WriteLine(character + " is not a letter");
             }
         }
-            }
+
+        Homework homework = new Homework();
+    }
 }
+                          
 
