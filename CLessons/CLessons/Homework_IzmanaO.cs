@@ -306,9 +306,13 @@ namespace CLessons_1
                 Console.WriteLine(character + " is not a letter");
             }
         }
-
-        Homework homework = new Homework();
     }
 }
-                          
 
+
+
+
+
+
+
+;

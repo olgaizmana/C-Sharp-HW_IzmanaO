@@ -33,6 +33,9 @@ namespace CLessons_1
             homework.CheckLetterIfVowel('p');
             homework.CheckLetterIfVowel('i');
 
+            homework.CheckLetterIfVowelContains('p');
+            homework.CheckLetterIfVowelContains('i');
+
             Console.ReadKey();
         }
     }
