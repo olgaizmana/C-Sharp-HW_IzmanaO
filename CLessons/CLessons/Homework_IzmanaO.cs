@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace CLessons_1
@@ -121,167 +121,26 @@ namespace CLessons_1
              * ---------------------------
              */
             //your code here
-            switch (character)
+            string vowels = "aeuioyAEUIOY";
+      
+            string consonant = "qwrtplkjhgfdszxcvbnmQWRTPLKJHGFDSZXCVBNM";
+          
+            switch (true)
             {
-                case 'a':
+                case bool resultVowels when vowels.Contains(character):
                     Console.WriteLine(character + " is a vowel");
                     break;
-                case 'i':
-                    Console.WriteLine(character + " is a vowel");
-                    break;
-                case 'o':
-                    Console.WriteLine(character + " is a vowel");
-                    break;
-                case 'u':
-                    Console.WriteLine(character + " is a vowel");
-                    break;
-                case 'e':
-                    Console.WriteLine(character + " is a vowel");
-                    break;
-                case 'y':
-                    Console.WriteLine(character + " is a vowel");
-                    break;
-                case 'b':
-                    Console.WriteLine(character + " is not a letter");
-                    break;
-                case 'c':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'd':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'f':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'g':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'h':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'j':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'k':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'l':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'm':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'n':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'p':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'q':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'r':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 's':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 't':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'v':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'w':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'z':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'x':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'A':
-                    Console.WriteLine(character + "is a vowel");
-                    break;
-                case 'I':
-                    Console.WriteLine(character + " is a vowel");
-                    break;
-                case 'O':
-                    Console.WriteLine(character + " is a vowel");
-                    break;
-                case 'U':
-                    Console.WriteLine(character + " is a vowel");
-                    break;
-                case 'E':
-                    Console.WriteLine(character + " is a vowel");
-                    break;
-                case 'Y':
-                    Console.WriteLine(character + " is a vowel");
-                    break;
-                case 'B':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'C':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'D':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'F':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'G':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'H':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'J':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'K':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'L':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'M':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'N':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'P':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'Q':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'R':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'S':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'T':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'V':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'W':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'Z':
-                    Console.WriteLine(character + " is a consonant");
-                    break;
-                case 'X':
+                case bool resultConsonant when consonant.Contains(character):
                     Console.WriteLine(character + " is a consonant");
                     break;
                 default:
                     Console.WriteLine(character + " is not a letter");
                     break;
+
+
+
+
+
             }
         }
 
@@ -306,6 +165,8 @@ namespace CLessons_1
                 Console.WriteLine(character + " is not a letter");
             }
         }
+
+
     }
 }
 
