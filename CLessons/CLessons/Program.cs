@@ -12,7 +12,8 @@ namespace CLessons_1
         {
             Console.WriteLine("Home work");
 
-            var homework = new Homework();
+            var homework = new Homework(12);
+
             homework.CheckIfNumberIsEvenOrOdd(4);
             homework.CheckIfNumberIsEvenOrOdd(7);
 
