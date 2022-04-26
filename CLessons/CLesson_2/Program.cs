@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CLesson_2
+namespace C_Sharp_Lesson_3_Homework
 {
     class Program
     {
