@@ -24,15 +24,15 @@ namespace C_Sharp_Lesson_3_Homework
              *    
              */
             //your code here
-            int[,,] Matrix1 = new int(m, n)
+            int[,,] Matrix1 = new int { 3, 3 };
             {
-             { 1,   3,  5},
-             {-1, 100, 11},
-             { 2,  15, 44}
+             {1,3,5},
+             {-1,100,11},
+             {2,15,44};
             };
-            int midindexcol = m / 2;
-            int midindexrow = n / 2;
-            Console.WriteLine(Matrix1[midindexcol, midindexrow]);
+            int len0 = Matrix1.GetLength(0);
+            int len1 = Matrix1.GetLength(1);
+            Console.WriteLine(Matrix1[len0/2, len1/2]);
 
         }
         public void GetSummOfDiagonalsElements(int[,] matrixOfIntegers)
