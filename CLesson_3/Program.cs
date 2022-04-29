@@ -29,8 +29,7 @@ namespace Homework
             homework.StarPrinter(triangleHight);
             homework.SortList(orderedList);
             Console.WriteLine();
-            generic_Collections.AddElementsStack();
-
+            generic_Collections.Stack();
             Console.WriteLine();
             Console.ReadKey();
         }
