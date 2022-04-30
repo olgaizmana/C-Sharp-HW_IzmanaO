@@ -12,7 +12,7 @@ namespace Homework
         int[,] matrix1 = new int[3, 3] { { 1, 3, 5 }, { -1, 100, 11 }, { 2, 15, 44 } };
         int[,] matrix2 = new int[3, 4] { { 1, 6, 21, 8 }, { 5, -4, 5, 7 }, { 77, 5, 0, 74 } };
         IList<int> list = new List<int>() { -5, 8, -7, 0, 44, 121, -7 };
-
+        
         public void GetCentralElementFromMatrix1(int[,] matrixOfIntegers)
         {
             /*print to console the central element from matrixOfIntegers, if not exist print: "This matrix doesn't have a central element"
@@ -38,8 +38,8 @@ namespace Homework
             int midlength1m1 = matrix1.GetLength(1) / 2;
             int n = matrix1.GetLength(0);
             int m = matrix1.GetLength(1);
-           
-                if (matrix1.GetLength(0) % 2 != 0 && matrix1.GetLength(1) % 2 != 0 && n == m)
+
+            if (matrix1.GetLength(0) % 2 != 0 && matrix1.GetLength(1) % 2 != 0 && n == m)
                 {
                     Console.WriteLine("The central element is " + matrix1[midlength0m1, midlength1m1]);
                 }
@@ -124,6 +124,7 @@ namespace Homework
             int secondDiagonal = 0;
             int a = matrix2.GetLength(0);
             int b = matrix2.GetLength(1);
+
 
             if (a == b)
             {

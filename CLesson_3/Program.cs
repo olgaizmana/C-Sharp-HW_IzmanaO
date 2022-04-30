@@ -31,6 +31,8 @@ namespace Homework
             Console.WriteLine();
             generic_Collections.Stack();
             Console.WriteLine();
+            generic_Collections.Queue();
+            Console.WriteLine();
             Console.ReadKey();
         }
     }
