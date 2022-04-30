@@ -36,23 +36,27 @@ namespace Homework
 
             int midlength0m1 = matrix1.GetLength(0) / 2;
             int midlength1m1 = matrix1.GetLength(1) / 2;
-
-            if (matrix1.GetLength(0) % 2 != 0 && matrix1.GetLength(1) % 2 != 0)
-            {
-                Console.WriteLine("The central element is " + matrix1[midlength0m1, midlength1m1]);
+            int n = matrix1.GetLength(0);
+            int m = matrix1.GetLength(1);
+           
+                if (matrix1.GetLength(0) % 2 != 0 && matrix1.GetLength(1) % 2 != 0 && n == m)
+                {
+                    Console.WriteLine("The central element is " + matrix1[midlength0m1, midlength1m1]);
+                }
+                else
+                {
+                    Console.WriteLine("This matrix doesn't have a central element");
+                }
             }
-            else
-            {
-                Console.WriteLine("This matrix doesn't have a central element");
-            }
-
-        }
+        
         public void GetCentralElementFromMatrix2(int[,] matrixOfIntegers)
         {
             int midlength0m2 = matrix2.GetLength(0) / 2;
             int midlength1m2 = matrix2.GetLength(1) / 2;
+            int a = matrix2.GetLength(0);
+            int b = matrix2.GetLength(1);
 
-            if (matrix2.GetLength(0) % 2 != 0 && matrix2.GetLength(1) % 2 != 0)
+            if (matrix2.GetLength(0) % 2 != 0 && matrix2.GetLength(1) % 2 != 0 && a == b)
             {
                 Console.WriteLine("The central element is " + matrix2[midlength0m2, midlength1m2]);
             }
@@ -60,8 +64,8 @@ namespace Homework
             {
                 Console.WriteLine("This matrix doesn't have a central element");
             }
-
-        }
+        
+    }
 
         public void GetSummOfDiagonalsElements1(int[,] matrixOfIntegers)
         {
