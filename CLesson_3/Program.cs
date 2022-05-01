@@ -33,6 +33,12 @@ namespace Homework
             Console.WriteLine();
             generic_Collections.Queue();
             Console.WriteLine();
+            generic_Collections.LinkedList();
+            Console.WriteLine();
+            generic_Collections.List();
+            Console.WriteLine();
+            generic_Collections.Dictionary();
+            Console.WriteLine();
             Console.ReadKey();
         }
     }
