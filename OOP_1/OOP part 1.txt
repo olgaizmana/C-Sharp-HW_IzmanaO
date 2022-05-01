@@ -1,0 +1,17 @@
+1.Make a class Worker, which will have the following public fields - name (name), age (age), salary (salary).
+Create an object of this class, then set the fields to the following values ​​(not in the constructor,
+but for the created object) - name 'John', age 25, salary 1000. 
+Create a second object of this class, 
+set the fields to the following values ​​- name 'Sam', age 26, salary 2000.
+
+Display the sum of John's and Sam's salaries. Display the sum of John's and Sam's ages.
+
+2.Make a class Worker, which will have the following private fields - name (name), age (age), 
+salary (salary) and the following public methods setName, getName, setAge, getAge, setSalary, getSalary.
+Create 2 objects of this class: 'John', age 25, salary 1000 and 'Sam', age 26, salary 2000.
+
+Display the sum of John's and Sam's salaries. Display the sum of John's and Sam's ages.
+
+3. Extend the Worker class from the previous task with the private method checkAge, 
+which will check the age for correctness (from 1 to 100 years). This method must use 
+the setAge method before setting the new age (if the age is not correct, it must not be changed).
