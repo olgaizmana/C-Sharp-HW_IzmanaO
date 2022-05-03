@@ -163,7 +163,7 @@ namespace CLesson_3
                 Console.WriteLine(item + ", ");
             }
             int binarySearch = myList.BinarySearch("5");
-            Console.WriteLine($"\"5\" index in OrderedParallelQuery myList is: {binarySearch}");
+            Console.WriteLine($"\"5\" index in Ordered myList is: {binarySearch}");
 
             Console.WriteLine(" myList capacity is " + myList.Capacity);
             var concatList = myList.Concat(newList);
