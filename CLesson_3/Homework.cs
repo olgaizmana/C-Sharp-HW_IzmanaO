@@ -40,7 +40,7 @@ namespace Homework
             int midlength1m1 = m / 2;
             
 
-            if (matrix1.GetLength(1) % 2 != 0 && n == m)
+            if (matrix1.GetLength(1) % 2 != 0 && matrix1.GetLength(0) % 2 != 0)
                 {
                     Console.WriteLine("The central element is " + matrix1[midlength0m1, midlength1m1]);
                 }
@@ -92,8 +92,8 @@ namespace Homework
 
             int firstDiagonal = 0;
             int secondDiagonal = 0;
-            int n = matrix1.GetLength(0);
-            int m = matrix1.GetLength(1);
+            int n = matrixOfIntegers.GetLength(0);
+            int m = matrixOfIntegers.GetLength(1);
 
             if (m == n)
             {
@@ -103,7 +103,7 @@ namespace Homework
                     for (int j = 0; j < n; j++)
                     {
                         if (i == j)
-                            firstDiagonal += matrix1[i, j];
+                            firstDiagonal += matrixOfIntegers[i, j];
                         if ((i + j) == (n - 1))
                             secondDiagonal += matrix1[i, j];
                     }
