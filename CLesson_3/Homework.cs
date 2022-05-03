@@ -34,12 +34,13 @@ namespace Homework
              */
             //your code here
 
-            int midlength0m1 = matrix1.GetLength(0) / 2;
-            int midlength1m1 = matrix1.GetLength(1) / 2;
             int n = matrix1.GetLength(0);
             int m = matrix1.GetLength(1);
+            int midlength0m1 = n / 2;
+            int midlength1m1 = m / 2;
+            
 
-            if (matrix1.GetLength(0) % 2 != 0 && matrix1.GetLength(1) % 2 != 0 && n == m)
+            if (matrix1.GetLength(1) % 2 != 0 && n == m)
                 {
                     Console.WriteLine("The central element is " + matrix1[midlength0m1, midlength1m1]);
                 }
@@ -51,12 +52,13 @@ namespace Homework
         
         public void GetCentralElementFromMatrix2(int[,] matrixOfIntegers)
         {
-            int midlength0m2 = matrix2.GetLength(0) / 2;
-            int midlength1m2 = matrix2.GetLength(1) / 2;
             int a = matrix2.GetLength(0);
             int b = matrix2.GetLength(1);
+            int midlength0m2 = a / 2;
+            int midlength1m2 = b / 2;
+            
 
-            if (matrix2.GetLength(0) % 2 != 0 && matrix2.GetLength(1) % 2 != 0 && a == b)
+            if (matrix2.GetLength(1) % 2 != 0 && a == b)
             {
                 Console.WriteLine("The central element is " + matrix2[midlength0m2, midlength1m2]);
             }
