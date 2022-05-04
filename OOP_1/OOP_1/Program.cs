@@ -46,6 +46,16 @@ namespace OOP_1
 
             worker5.GetAge();
 
+            Matrix matrix = new Matrix();
+
+            FirstDiagonal firstDiagonal = new FirstDiagonal();
+            firstDiagonal.GetFirstDiagonalSum(matrix.CreateFirstMatrix());
+            firstDiagonal.GetFirstDiagonalSum(matrix.CreateSecondMatrix());
+
+            SecondDiagonal secondDiagonal = new SecondDiagonal();
+            secondDiagonal.GetSecondDiagonalSum(matrix.CreateFirstMatrix());
+            secondDiagonal.GetSecondDiagonalSum(matrix.CreateSecondMatrix());
+
             
 
             //Worker worker = new Worker();
