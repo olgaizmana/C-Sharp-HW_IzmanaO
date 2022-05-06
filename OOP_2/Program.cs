@@ -17,9 +17,18 @@ namespace OOP_2
             workers.Add(workerVasya);
             workerIvan.Worker1SalarySum(workers);
 
-            Student student = new Student("Wasya", 20, "Nobel","Math");
+            Student student = new Student("Wasya", 20, "Nobel", "Math");
             student.PrintScholarshipCourse();
 
+            Dog dogKuzya = new Dog("Rotweiller", "Kuzya", "medium", 2);
+            dogKuzya.PrintGreeting();
+            dogKuzya.PrintDogParameters();
+            dogKuzya.DogExtend();
+
+            Cat catWasya = new Cat("Wasya", "house", "dvornyaga", 5);
+            catWasya.PrintGreeting();
+            catWasya.PrintCatParameters();
         }
     }
 }
+
