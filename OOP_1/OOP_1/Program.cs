@@ -42,7 +42,7 @@ namespace OOP_1
 
             Worker2 worker5 = new Worker2();
             worker5.SetName("Johnny");
-            worker5.SetAge(25);         
+            worker5.SetAge(101);         
 
             worker5.GetAge();
 

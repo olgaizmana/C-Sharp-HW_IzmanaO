@@ -11,7 +11,7 @@ namespace OOP_1
         public string name;
         public int age;
         public int salary;
-              //  List<Worker> workers = new List<Worker>();
+        //  List<Worker> workers = new List<Worker>();
 
         //public void Workersobj()
         //{
@@ -36,20 +36,20 @@ namespace OOP_1
             int salarySum = 0;
 
             foreach (var item in workers)
-         {
-              salarySum += item.salary;
-         }
-          Console.WriteLine($"Salaries sum is equal to {salarySum}");
-         }
+            {
+                salarySum += item.salary;
+            }
+            Console.WriteLine($"Salaries sum is equal to {salarySum}");
+        }
 
         public void WorkersAgeSum(List<Worker> workers)
         {
-         int ageSum = 0;
-         foreach (var item in workers)
-         {
-             ageSum += item.age;
-         }
-         Console.WriteLine($"Ages sum is equal to {ageSum}");
+            int ageSum = 0;
+            foreach (var item in workers)
+            {
+                ageSum += item.age;
+            }
+            Console.WriteLine($"Ages sum is equal to {ageSum}");
         }
     }
 }
@@ -57,15 +57,15 @@ namespace OOP_1
 
 //public void SalarySum()
 //{
-  //  int salary_sum = worker.salary + worker1.salary;
-  //  Console.WriteLine($"Salaries sum is equal to {salary_sum}");
+//  int salary_sum = worker.salary + worker1.salary;
+//  Console.WriteLine($"Salaries sum is equal to {salary_sum}");
 //}
 
 
 //public void AgeSum()
 //{
 //    int age_sum = (worker.age + worker1.age);
- //   Console.WriteLine($"Ages sum is equal to {age_sum}");
+//   Console.WriteLine($"Ages sum is equal to {age_sum}");
 //}
 
 
