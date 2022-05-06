@@ -9,7 +9,7 @@ namespace OOP_2
         private string _scholarship;
         private string _course;
 
-        public Student(string name, int age, string scholarship, string course)
+        public Student(string name, int age, string scholarship, string course):base(name)
         {
             this.name = name;
             this.age = age;

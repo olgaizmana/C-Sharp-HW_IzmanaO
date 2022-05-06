@@ -7,7 +7,7 @@ namespace OOP_2
     public class Worker1 : User
     {
         private int _salary;      
-        public Worker1 (string name, int age, int salary)
+        public Worker1 (string name, int age, int salary): base(name)
         { 
             this.name = name;
             this.age = age;

@@ -8,5 +8,12 @@ namespace OOP_2
     {
         protected string name;
         protected int age;
+
+        protected User(string name)
+        {
+            this.name = name;
+        }
     }
+
+    
 }
