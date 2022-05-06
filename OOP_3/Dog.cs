@@ -36,5 +36,10 @@ namespace OOP_3
         {
             Console.WriteLine("Bye Woof fellow dogs");
         }
+
+        public void PrintByeMessage(string name)
+        {
+            Console.WriteLine($"{name} is saying to you bye Woof fellow dogs");
+        }
     }
 }
