@@ -13,8 +13,6 @@ namespace OOP_2
             this.age = age;
             _salary = salary;
         }
-
-
         public void SetSalary(int salary)
         {
             _salary = salary;
