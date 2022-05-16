@@ -6,15 +6,16 @@ using System.Threading;
 namespace POM_ProjectPlan
 {
     public class LoginTests
-
     {
         private IWebDriver _driver;
         [SetUp]
         public void Setup()
         {
+            ChromeOptions options = new ChromeOptions();
+            options.AddArguments("-- start-maximized");
             _driver = new ChromeDriver();
             _driver.Navigate().GoToUrl("https://projectplanappweb-stage.azurewebsites.net/login");
-            _driver.Manage().Window.Maximize();
+            
         }
 
         [Test]
@@ -101,9 +102,6 @@ namespace POM_ProjectPlan
 
             _driver.Close();
             _driver.Quit();
-
         }
-
-        
     }
 }
