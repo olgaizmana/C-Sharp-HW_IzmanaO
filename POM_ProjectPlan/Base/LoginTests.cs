@@ -3,7 +3,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System.Threading;
 
-namespace POM_ProjectPlan
+namespace POM_ProjectPlan.Base
 {
     public class LoginTests
     {
@@ -11,8 +11,6 @@ namespace POM_ProjectPlan
         [SetUp]
         public void Setup()
         {
-            ChromeOptions options = new ChromeOptions();
-            options.AddArguments("-- start-maximized");
             _driver = new ChromeDriver();
             _driver.Navigate().GoToUrl("https://projectplanappweb-stage.azurewebsites.net/login");
             
@@ -49,10 +47,6 @@ namespace POM_ProjectPlan
             Thread.Sleep(2000);
             string actualUserName = _driver.FindElement(By.ClassName("user-name")).Text;
             Assert.AreEqual(actualUserName, "Automation tests");
-
-            _driver.Close();
-            _driver.Quit();
-
         }
 
         [Test]
@@ -72,10 +66,7 @@ namespace POM_ProjectPlan
             Thread.Sleep(2000);
             string actualWrongUsernameMessage = _driver.FindElement(By.Id("usernameError")).Text;
             Assert.AreEqual(actualWrongUsernameMessage, "This username may be incorrect. Make sure you typed it correctly. Otherwise, contact your admin.");
-
-            _driver.Close();
-            _driver.Quit();
-        }
+         }
 
         [Test]
         public void LoginWrongPasswordTest()
@@ -99,7 +90,12 @@ namespace POM_ProjectPlan
             Thread.Sleep(2000);
             string actualWrongUsernameMessage = _driver.FindElement(By.Id("passwordError")).Text;
             Assert.AreEqual(actualWrongUsernameMessage, "Your account or password is incorrect. If you don't remember your password, reset it now.");
+        }
 
+        [TearDown]
+
+        public void TearDown()
+        {
             _driver.Close();
             _driver.Quit();
         }

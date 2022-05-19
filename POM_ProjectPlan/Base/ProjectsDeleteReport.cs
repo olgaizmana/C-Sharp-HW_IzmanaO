@@ -4,9 +4,9 @@ using OpenQA.Selenium.Chrome;
 using System.Threading;
 using OpenQA.Selenium.Support.UI;
 
-namespace POM_ProjectPlan
+namespace POM_ProjectPlan.Base
 {
-    public class ProjectsDeleteReport
+    public class ProjectsDeleteReport : ProjectsNewReport
     {
         private static IWebDriver _driver;
         private static string _username = "automation.pp@amdaris.com";
@@ -17,7 +17,9 @@ namespace POM_ProjectPlan
         {
             _driver = new ChromeDriver();
             _driver.Navigate().GoToUrl("https://projectplanappweb-stage.azurewebsites.net/login");
+
             _driver.Manage().Window.Maximize();
+
             Thread.Sleep(2000);
             _driver.FindElement(By.XPath("//div[@class='button']/span")).Click();
 

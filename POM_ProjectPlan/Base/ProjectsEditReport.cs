@@ -3,7 +3,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System.Threading;
 
-namespace POM_ProjectPlan
+namespace POM_ProjectPlan.Base
 {
     class ProjectsEditReport
     {
@@ -16,7 +16,9 @@ namespace POM_ProjectPlan
         {
             _driver = new ChromeDriver();
             _driver.Navigate().GoToUrl("https://projectplanappweb-stage.azurewebsites.net/login");
+
             _driver.Manage().Window.Maximize();
+
             Thread.Sleep(2000);
             _driver.FindElement(By.XPath("//div[@class='button']/span")).Click();
 
@@ -76,11 +78,6 @@ namespace POM_ProjectPlan
 
             Thread.Sleep(2000);
             _driver.Navigate().Refresh();
-
-            Thread.Sleep(2000);
-            string initialactualNumberOfReports = _driver.FindElement(By.ClassName("mat-paginator-range-label")).Text;
-            string initialnumberOfReports = initialactualNumberOfReports.Substring(initialactualNumberOfReports.Length - 2);
-            int intinitialNrOfReports = int.Parse(initialnumberOfReports);
         }
 
         public void ProjectsSuccesfullyEditReport()
@@ -90,7 +87,7 @@ namespace POM_ProjectPlan
             _driver.FindElement(By.XPath("//div[@class='button']/span")).Click();
 
             Thread.Sleep(2000);
-            _driver.FindElement(By.XPath("//input[@type='email']")).SendKeys(username);
+            _driver.FindElement(By.XPath("//input[@type='email']")).SendKeys(_username);
 
             Thread.Sleep(2000);
             _driver.FindElement(By.XPath("//input[@type='submit']")).Click();
