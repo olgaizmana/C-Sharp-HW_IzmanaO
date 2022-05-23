@@ -34,14 +34,6 @@ namespace POM_ProjectPlan.POM
         public void PressSubmitButton()
         {
             _wait.Until(ExpectedConditions.ElementToBeClickable(_yesButton)).Click();
-        }
-
-       
-
-
-
-        
-            string actualUserName = _driver.FindElement(By.ClassName("user-name")).Text;
-        Assert.AreEqual(actualUserName, "Automation tests");
+        }           
     }
 }

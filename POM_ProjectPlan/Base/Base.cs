@@ -7,12 +7,19 @@ using System;
 using System.Threading;
 
 
-namespace POM_ProjectPlan.Base
+namespace POM_ProjectPlan
 {
-    class Base
+    public class Base
     {
-        private IWebDriver _driver;
-        private WebDriverWait _wait;
+        protected IWebDriver driver;
+        protected WebDriverWait wait;
+        
+        public Base(IWebDriver driver, WebDriverWait wait)
+        {
+            this.driver = driver;
+            this.wait = wait;
+        }
+
 
 
         [SetUp]
