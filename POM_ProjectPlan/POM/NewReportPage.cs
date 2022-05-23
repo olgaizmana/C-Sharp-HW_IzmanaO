@@ -1,11 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using NUnit.Framework;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
+using System;
+using System.Linq;
+using System.Threading;
 
 namespace POM_ProjectPlan.POM
 {
     class NewReportPage
     {
+
+        private IWebDriver _driver;
+        private WebDriverWait _wait;
+
+        public NewReportPage(IWebDriver driver, WebDriverWait wait)
+        {
+            _driver = driver;
+            _wait = wait;
+        }
+
         public void SelectOption()
         {
             Thread.Sleep(2000);
@@ -20,12 +35,16 @@ namespace POM_ProjectPlan.POM
             var options = _driver.FindElements(By.CssSelector("mat-option"));
             Thread.Sleep(2000);
             // Find the option with the text that matches the one you are looking for.
-            options.First(element => element.Text == "AMX")
+            options.First(element => element.Text == "Green")
                 // Click it to select it.
                 .Click();
+            options.Second(element => element.Text == "Amber")
+            .Click();
+            options.Last(element => element.Text == "Red")
+            .Click();
 
 
-
-        }  
+        }
     }
 }
+
